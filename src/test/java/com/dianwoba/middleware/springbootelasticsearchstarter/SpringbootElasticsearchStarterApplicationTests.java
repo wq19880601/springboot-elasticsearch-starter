@@ -124,10 +124,10 @@ public class SpringbootElasticsearchStarterApplicationTests {
 //    QBalanceLog  b = QBalanceLog.balanceLog;
 //    BalanceLog balanceLog = new BalanceLog();
 //    balanceLog.setName("21311");
-//    long execute = elasticSearchQueryFactory.config(esConfig).update().populate(balanceLog).where(
+//    long execute = elasticSearchQueryFactory.update("balance_log-201706","balance_log", "162", BalanceLog.class).populate(balanceLog).where(
 //        balance_log.id.eq(12313L))
 //        .execute();
-//
+
 //    Assert.assertTrue(execute > 0);
 
 
@@ -207,10 +207,10 @@ public class SpringbootElasticsearchStarterApplicationTests {
     DateTime end = DateTime.parse("2017-12-29 14:52:58", DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss"));
 
     QBalanceLog  b = QBalanceLog.balanceLog;
-    long execute = elasticSearchQueryFactory.delete("balance_log-201711","balance_log","1",BalanceLog.class).where(
-//        b.insTm.goe(start.toDate()).and(b.insTm.loe(end.toDate())))
-    b.id.in(9222222222211L,9222222222212L))
-        .execute();
+//    long execute = elasticSearchQueryFactory
+//        .delete("balance_log-201711", "balance_log", "1", BalanceLog.class).where(
+//            b.insTm.goe(start.toDate()).and(b.insTm.loe(end.toDate())));
+//    b.id.in(9222222222211L, 9222222222212L).execute();
 
 //    Assert.assertTrue(execute > 0);
 
