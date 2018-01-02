@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.dianwoba.middleware.elastic.autoconfigure.EsAutoConfiguration
