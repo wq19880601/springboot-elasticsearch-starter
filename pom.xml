@@ -13,6 +13,19 @@
   <description>Demo project for Spring Boot</description>
 
 
+  <distributionManagement>
+    <repository>
+      <id>Releases</id>
+      <name>点我达maven仓库</name>
+      <url>http://192.168.1.177:8081/nexus/content/repositories/releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>Snapshots</id>
+      <name>点我达maven仓库-SNAPSHOT</name>
+      <url>http://192.168.1.177:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
